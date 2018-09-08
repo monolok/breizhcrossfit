@@ -64,12 +64,26 @@
     </nav>
 
     <!-- Header -->
+    <!-- <input type="button" value="PLAY"  onclick="play()">
+    <audio id="audio" src="http://dev.interactive-creation-works.net/1/1.ogg" ></audio> -->
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Welcome To Our Studio!</div>
           <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services" value="PLAY"  onclick="play()">Tell Me More</a>
+
+
+          <script>
+        function play(){
+             var audio = document.getElementById("audio");
+             audio.play();
+                       }
+         </script>
+<!--           <input type="button" value="PLAY"  onclick="play()"> -->
+          <audio id="audio" src="sound/hus.m4a" ></audio>
+
+
         </div>
       </div>
     </header>
