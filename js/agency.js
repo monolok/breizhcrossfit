@@ -47,4 +47,10 @@
     $('.navbar').removeClass('d-none');
   })
 
+  //Audio
+  function play(){
+    var audio = document.getElementById("audio");
+    audio.play();
+  };
+
 })(jQuery); // End of use strict
