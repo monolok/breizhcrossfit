@@ -27,16 +27,21 @@
 
   <body id="page-top">
     <script>
-    function play(){
-      var audio = document.getElementById("audio");
-      audio.play();
-    };
+      function play(){
+        var audio = document.getElementById("audio");
+        audio.play();
+      };
+      function play_1(){
+        var audio1 = document.getElementById("audio1");
+        audio1.play();
+      };    
     </script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">BREIZH CROSSFIT</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" value="PLAY"  onclick="play_1()">BREIZH CROSSFIT</a>
+        <audio id="audio1" src="sound/adjibe.m4a" ></audio>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -47,22 +52,25 @@
               <a class="nav-link js-scroll-trigger" href="#services">LA BOX</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">LES COACHS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">TARIFS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#planning">PLANNING</a>
+              <a class="nav-link js-scroll-trigger" href="#price">TARIFS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">SHOP</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#planning">PLANNING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">LES COACHS</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">CONTACTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">MEMBRES</a>
+              <a class="nav-link js-scroll-trigger" href="#">
+                <i class="fas fa-sign-in-alt fa-2x"></i>
+                <!-- MEMBRES -->
+              </a>
             </li>
           </ul>
         </div>
@@ -86,12 +94,12 @@
       </div>
     </header>
 
-    <!-- Services -->
+    <!-- LA BOX -->
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
+            <h2 class="section-heading text-uppercase">La BOX</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
@@ -99,52 +107,89 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-dumbbell fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
+            <h4 class="service-heading">Haltérophilie</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-child fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
+            <h4 class="service-heading">Gymnastique</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-heartbeat fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Web Security</h4>
+            <h4 class="service-heading">Athlétisme</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
         </div>
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
           </div>
           <div class="col-lg-4 col-sm-6">
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
           </div>
           <div class="col-lg-4 col-sm-6">
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
           </div>
           <div class="col-lg-4 col-sm-6">
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
           </div>
           <div class="col-lg-4 col-sm-6">
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
           </div>
           <div class="col-lg-4 col-sm-6">
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+<!--             <a href="#"> -->
+              <img class="img-fluid d-block mx-auto" src="img/logos/ouest-france.png" alt="">
+<!--             </a> -->
+          </div>
+          <div class="col-md-3 col-sm-6">
+<!--             <a href="#"> -->
+              <img class="img-fluid d-block mx-auto" src="img/logos/cf.jpg" alt="">
+<!--             </a> -->
+          </div>
+          <div class="col-md-3 col-sm-6">
+<!--             <a href="#"> -->
+              <img class="img-fluid d-block mx-auto" src="img/logos/express.png" alt="">
+<!--             </a> -->
+          </div>
+          <div class="col-md-3 col-sm-6">
+<!--             <a href="#"> -->
+              <img class="img-fluid d-block mx-auto" src="img/logos/rogue.jpg" alt="">
+<!--             </a> -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
+    <!-- price -->
+    <section id="price">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Le coût du bonheur</h2>
+            <h3 class="section-subheading text-muted">TARIFS ACTUELLEMENT PROPOSÉS</h3>
+          </div>
+        </div>
+        <div class="row">
+          tarifs
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP Grid -->
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
@@ -343,34 +388,6 @@
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-<!--             <a href="#"> -->
-              <img class="img-fluid d-block mx-auto" src="img/logos/ouest-france.png" alt="">
-<!--             </a> -->
-          </div>
-          <div class="col-md-3 col-sm-6">
-<!--             <a href="#"> -->
-              <img class="img-fluid d-block mx-auto" src="img/logos/cf.jpg" alt="">
-<!--             </a> -->
-          </div>
-          <div class="col-md-3 col-sm-6">
-<!--             <a href="#"> -->
-              <img class="img-fluid d-block mx-auto" src="img/logos/express.png" alt="">
-<!--             </a> -->
-          </div>
-          <div class="col-md-3 col-sm-6">
-<!--             <a href="#"> -->
-              <img class="img-fluid d-block mx-auto" src="img/logos/rogue.jpg" alt="">
-<!--             </a> -->
           </div>
         </div>
       </div>
