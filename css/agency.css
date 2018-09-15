@@ -25,6 +25,12 @@ a:hover {
   color: #fed136 !important;
 }
 
+#title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 h1,
 h2,
 h3,
